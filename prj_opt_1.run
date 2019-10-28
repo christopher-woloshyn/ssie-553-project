@@ -1,0 +1,17 @@
+# Reset the AMPL environment
+reset;
+
+# Load Model
+model prj_opt_1.mod;
+
+# Load Data
+data prj_opt_1.dat;
+
+# Solve Problem
+solve;
+
+# Show Results
+display total_cost;
+display labor, overtime, trucks, demand, inventory;
+
+# run command include prj_opt_1.run
